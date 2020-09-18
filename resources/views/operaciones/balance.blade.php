@@ -26,7 +26,7 @@
 		  <div class="card-body">
 			  	<div class="row">
 			  		<ul>
-			  			<li>Tarjeta Nro: {{ $data['tarjeta']->numero }} Vence: {{ $data['tarjeta']->numero }}</li>
+			  			<li>Tarjeta Nro: {{ $data['tarjeta']->numero }} Vence: {{ date('d/m/Y',strtotime($data['tarjeta']->fechaVencimiento)) }}</li>
 			  			<li>Ultima operacion: {{$data['operacion']->tipo->nombre}} por ${{ $data['operacion']->monto }}</li>
 			  			<li>Saldo disponible: {{ $data['saldo']->saldo }}</li>
 			  		</ul>

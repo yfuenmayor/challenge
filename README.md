@@ -59,3 +59,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Instrucciones de la aplicacion
+
+- Clonar el repositorio en la carpeta www de laragon
+- Instalar dependencias de composer
+- Configurar conexion de base de datos en archivo .env
+- Crear base de datos
+- Desde la consola nos ubicarnos en la raiz del proyecto y ejecutamos los comandos siguientes:
+	- php artisan migrate
+	- php artisan seede
