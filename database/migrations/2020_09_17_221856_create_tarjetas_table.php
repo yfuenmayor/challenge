@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateTarjetasTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('tarjetas', function (Blueprint $table) {
+            $table->id();
+            $table->string('numero', 16);
+            $table->string('pin', 4);
+            $table->foreignId('cuenta_id')->references('id')->on('cuentas');
+            $table->dateTime('fechaVencimiento', 0);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('tarjetas');
+    }
+}
