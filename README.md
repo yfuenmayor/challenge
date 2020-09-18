@@ -60,6 +60,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+## NOTA
+
+ -El DER se encuentra en el directorio public
+
 ## Instrucciones de la aplicacion
 
 - Clonar el repositorio en la carpeta www de laragon
@@ -68,4 +72,29 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - Crear base de datos
 - Desde la consola nos ubicarnos en la raiz del proyecto y ejecutamos los comandos siguientes:
 	- php artisan migrate
-	- php artisan seede
+	- php artisan seed
+- Una vez ejecutados esos comandos deberiamos tener la base de datos con datos ingresados para las pruebas
+- para ingresar en la app coloque: challenge.tes
+
+### Para realizar pruebas
+
+- Tarjeta : 1111-2222-3333-4444-5555
+- Pin : 1234
+- Estado: activa
+
+- Tarjeta : 2222-3333-4444-5555-6666
+- Pin : 5678
+- Estado: bloqueada
+
+- Tarjeta : 1111-4444-2222-5555
+- Pin : 1111
+- Estado: activa
+
+- Tarjeta : 9999-8888-7777-6666
+- Pin : 4321
+- Estado: activa
+
+
+
+
+
